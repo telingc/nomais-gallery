@@ -1,0 +1,20 @@
+# 木灶星 · 测量与力学的起点
+
+- id: th-signalscope
+  title: 信号望远镜
+  question: 只靠两次不同位置的测向，能否定位一个信号源？信号强度按平方反比衰减，能不能给出距离——精度受什么限制？
+  location: timber-hearth
+  domain: [inference]
+  status: rumor
+  leads_to:
+    - {to: th-measure-g, type: prereq, note: 测量、误差与反问题的第一课}
+
+- id: th-measure-g
+  title: 测量本地重力
+  question: 只用一块石头和一个计时器，能把木灶星的表面重力测到几位有效数字？误差从哪里来，怎样设计实验把它压下去？
+  location: timber-hearth
+  domain: [mechanics, inference]
+  status: rumor
+  leads_to:
+    - {to: bh-shell-theorem,   type: prereq}
+    - {to: gd-buoyant-islands, type: prereq}

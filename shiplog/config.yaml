@@ -1,0 +1,61 @@
+# Ship Log 全局配置。作者通常只需要在这里补充新的星球/设施或领域名称。
+
+title: "Nomai's Gallery · Ship Log"
+subtitle: "用 Outer Wilds 的问题学习严肃物理 · 非官方"
+
+repo_url: https://github.com/telingc/nomais-gallery
+branch: main
+
+# 卡片尺寸（px），前端与布局共用
+card:
+  width: 160
+  height: 110
+
+# 自动布局参数：k 为相邻卡片的期望距离（px）
+layout:
+  k: 200
+  iterations: 300
+  seed: 42
+  padding: 28          # 卡片之间的最小间隙
+
+# 星球与设施。kind 用于 Map Mode 分组；name 为显示名，en 为英文原名。
+locations:
+  timber-hearth:      {name: 木灶星,       en: Timber Hearth,        kind: planet}
+  attlerock:          {name: 阿特尔岩,     en: Attlerock,            kind: planet}
+  hourglass-twins:    {name: 沙漏双星,     en: Hourglass Twins,      kind: planet}
+  brittle-hollow:     {name: 碎空星,       en: Brittle Hollow,       kind: planet}
+  hollows-lantern:    {name: 碎空灯,       en: Hollow's Lantern,     kind: planet}
+  giants-deep:        {name: 深巨星,       en: Giant's Deep,         kind: planet}
+  dark-bramble:       {name: 黑荆星,       en: Dark Bramble,         kind: planet}
+  quantum-moon:       {name: 量子卫星,     en: Quantum Moon,         kind: planet}
+  interloper:         {name: 闯入者,       en: The Interloper,       kind: planet}
+  sun:                {name: 太阳,         en: The Sun,              kind: star}
+  eye:                {name: 宇宙之眼,     en: Eye of the Universe,  kind: other}
+  sun-station:        {name: 太阳站,       en: Sun Station,          kind: facility}
+  white-hole-station: {name: 白洞站,       en: White Hole Station,   kind: facility}
+  high-energy-lab:    {name: 高能实验室,   en: High Energy Lab,      kind: facility}
+  orbital-probe-cannon: {name: 轨道探测炮, en: Orbital Probe Cannon, kind: facility}
+  ash-twin-project:   {name: 灰烬双星计划, en: Ash Twin Project,     kind: facility}
+
+# 物理/数学/计算领域标签
+domains:
+  mechanics:      力学
+  gravitation:    引力
+  orbital:        天体力学
+  electrodynamics: 电动力学
+  plasma:         等离子体
+  fluids:         流体
+  thermo:         热与统计
+  relativity:     相对论
+  quantum:        量子
+  astro:          恒星与宇宙
+  numerics:       数值方法
+  inference:      测量与推断
+  information:    信息与因果
+
+# 边的类型：dash 为 SVG stroke-dasharray；contradiction 额外在中点画 “≠”
+edge_types:
+  prereq:        {name: 先修,          dash: ""}
+  deepen:        {name: 深化,          dash: "2 5"}
+  analogy:       {name: 类比,          dash: "9 6"}
+  contradiction: {name: 游戏 vs 现实,  dash: "9 6"}
