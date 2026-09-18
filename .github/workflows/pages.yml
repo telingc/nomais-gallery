@@ -1,13 +1,15 @@
 name: Deploy Ship Log to GitHub Pages
 
+# 上线前只允许手动触发；准备发布时把下面的 push 触发器取消注释，
+# 并在仓库 Settings → Pages → Source 选择 GitHub Actions。
 on:
-  push:
-    branches: [main]
-    paths:
-      - "shiplog/**"
-      - "figures/**"
-      - ".github/workflows/pages.yml"
   workflow_dispatch:
+  # push:
+  #   branches: [main]
+  #   paths:
+  #     - "shiplog/**"
+  #     - "figures/**"
+  #     - ".github/workflows/pages.yml"
 
 permissions:
   contents: read
