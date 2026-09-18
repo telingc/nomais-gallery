@@ -1,4 +1,4 @@
-# Nomai's Gallery
+# Ship Log development notes
 
 以《星际拓荒》(Outer Wilds) 的太阳系为舞台，由浅至深地学习严肃的物理。
 理念是**寻找和理解**：从可观察的现象出发，建立最小模型，做数值实验，推到解析结果，看它在哪里失效，再走向前沿。
