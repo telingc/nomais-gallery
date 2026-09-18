@@ -1,6 +1,6 @@
 # 深巨星 · 电动力学与流体主线
 #
-# 每条 entry 是一个「问题」，不是知识点。字段说明见 shiplog/README 段落或 build.py 顶部注释。
+# 每条 entry 是一个「问题」，不是知识点。字段说明见 notes/shiplog-guide.md 或 build.py 顶部注释。
 # 新增问题：复制最后一条，改 id / title / question / leads_to 即可，其余可省略。
 
 - id: gd-charged-core
