@@ -2,6 +2,9 @@
 shiplog/web/data.js
 shiplog/web/figures/
 
+# personal working notes, not part of the project
+notes/
+
 __pycache__/
 *.pyc
 .venv/
