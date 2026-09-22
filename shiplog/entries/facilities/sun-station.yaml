@@ -1,9 +1,0 @@
-# 太阳站 · 恒星物理 capstone
-
-- id: ss-energy-budget
-  title: 让恒星死亡需要多少能量
-  question: 太阳的引力束缚能 ~GM²/R 有多大？一个外部装置要显著扰动恒星的静水平衡，需要注入其中多大比例的能量——这个数字本身是否已经宣判了实验的结局？
-  location: sun-station
-  domain: [astro, thermo]
-  status: rumor
-  leads_to: []

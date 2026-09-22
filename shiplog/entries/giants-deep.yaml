@@ -4,95 +4,27 @@
 # 新增问题：复制最后一条，改 id / title / question / leads_to 即可，其余可省略。
 
 - id: gd-charged-core
-  title: 带电的核心
-  question: 深巨星的核心要带多少电荷，才能把一艘飞船挡在电流层之外？这些电荷在导电的海水里能维持多久不被中和？
+  title: The electro-core of Giant's Deep
+  question: What does the core of the Giant's Deep constructed of?
   location: giants-deep
   domain: [electrodynamics]
   status: explored
   more_to_explore: true
-  updated: 2026-09-18
-  thumbnail: figures/gd-charged-core.png
+  updated: 2026-09-22
+  thumbnail: figures/gd-core.png
   links:
     notebook: labs/giants-deep/charged_shell.py
     chapter: book/chapters/giants-deep.tex
     exercises: exercises/giants-deep.md
   facts:
-    - kind: result
-      text: 高斯定律：均匀带电球壳内部 E = 0，外部 E = Q/(4πε₀r²)，与把全部电荷放在球心的点电荷无法区分。
-    - kind: result
-      text: 把核心视作球形导体：电容 C = 4πε₀R 与半径成正比，静电能 U = Q²/(2C)。
-    - kind: result
-      text: 电荷弛豫时间 τ = ε/σ。海水 σ ≈ 5 S/m，τ ~ 10⁻¹⁰ s——任何净电荷在导电海洋里不到一纳秒就被中和。
-    - kind: result
-      text: 结论：能长期存在的不是整体净电荷，而是靠持续电流维持的电势差。问题被推向等离子体与发电机。
-    - kind: rumor
-      text: 如果海洋和大气是等离子体，Debye 屏蔽会不会把场压回核心附近？
-    - kind: rumor
-      text: 如果核心在旋转，会产生怎样的磁场？
+    
   leads_to:
-    - {to: gd-debye,            type: deepen}
-    - {to: gd-rotating-shell,   type: deepen}
-    - {to: gd-lightning-budget, type: deepen}
-    - {to: gd-jellyfish,        type: contradiction}
-    - {to: bh-shell-theorem,    type: analogy, note: 高斯定律 ↔ 壳层定理}
+    - {to: gd-charged-shell, type: deepen}
 
-- id: gd-jellyfish
-  title: 绝缘的水母
-  question: 游戏里躲进水母就能穿过电流层。绝缘体真的能屏蔽电场吗？还是只有导体腔才能做到？
+- id: gd-charged-shell
+  title: Will a core of charges be stable?
+  question: Will a core of charges be stable?
   location: giants-deep
   domain: [electrodynamics]
-  status: rumor
-  leads_to: []
-
-- id: gd-debye
-  title: 等离子体的屏蔽
-  question: 如果海洋和深层大气是导电的等离子体，核心的电场能透出多远？Debye 长度由什么决定？
-  location: giants-deep
-  domain: [plasma, electrodynamics]
-  status: rumor
-  leads_to:
-    - {to: gd-dynamo, type: deepen}
-
-- id: gd-rotating-shell
-  title: 旋转的带电壳
-  question: 一个以角速度 ω 旋转的带电球壳产生多大的磁偶极矩？要解释一个行星尺度的磁场，需要多少电荷和多快的转速？
-  location: giants-deep
-  domain: [electrodynamics]
-  status: rumor
-  leads_to:
-    - {to: gd-dynamo, type: deepen}
-
-- id: gd-lightning-budget
-  title: 闪电的账本
-  question: 深巨星上不停歇的闪电每秒释放多少能量？这些能量从哪里来，电荷分离的机制是什么？
-  location: giants-deep
-  domain: [electrodynamics, thermo]
-  status: rumor
-  leads_to:
-    - {to: ss-energy-budget, type: analogy, note: 都是能量预算的 Fermi 估算}
-
-- id: gd-buoyant-islands
-  title: 漂浮的岛
-  question: 一座岛要浮在海面上，平均密度需要多低？这样的岛在多大的气旋里会被整个抬起？
-  location: giants-deep
-  domain: [mechanics, fluids]
-  status: rumor
-  leads_to:
-    - {to: gd-cyclones, type: deepen}
-
-- id: gd-cyclones
-  title: 抛岛的飓风
-  question: 把一座岛抛出海面并短暂进入轨道，气旋中心需要多大的压强差和上升气流速度？这在旋转行星的流体力学里可能吗？
-  location: giants-deep
-  domain: [fluids, mechanics]
-  status: rumor
-  leads_to:
-    - {to: gd-dynamo, type: prereq, note: 对流与旋转是发电机的前提}
-
-- id: gd-dynamo
-  title: 海洋发电机
-  question: 导电海洋的对流与旋转能否自发维持一个磁场？磁雷诺数需要多大，深巨星够不够？
-  location: giants-deep
-  domain: [plasma, fluids]
   status: rumor
   leads_to: []

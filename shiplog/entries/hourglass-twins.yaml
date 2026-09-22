@@ -1,9 +1,0 @@
-# 沙漏双星 · 天体力学
-
-- id: ht-sand-column
-  title: 双星之间的沙柱
-  question: 两颗星要靠多近，沙子才能从一颗流向另一颗？这个距离和 Roche 极限是什么关系，双星自己会不会先被撕开？
-  location: hourglass-twins
-  domain: [orbital, gravitation]
-  status: rumor
-  leads_to: []
